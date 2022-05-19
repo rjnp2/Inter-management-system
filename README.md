@@ -1,1 +1,1 @@
-# Inter-management-system
+# Inter management system
