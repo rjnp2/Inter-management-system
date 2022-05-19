@@ -1,0 +1,2950 @@
+{
+	"info": {
+		"_postman_id": "961cfa21-d1e3-44e7-9417-7a89bed8a312",
+		"name": "IMS",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "create supervisior user by admin/superadmin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"super@g.com\",\n    \"last_name\": \"user1\",\n    \"first_name\": \"user1\",\n    \"password\": \"op09op09\",\n    \"password2\": \"op09op09\",\n    \"is_staff\": true,\n    \"is_superuser\": false,\n    \"is_admin\": false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/register/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"register",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create supervisior user by admin/superadmin",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"super@g.com\",\n    \"last_name\": \"user1\",\n    \"first_name\": \"user1\",\n    \"password\": \"op09op09\",\n    \"password2\": \"op09op09\",\n    \"is_staff\": true,\n    \"is_superuser\": false,\n    \"is_admin\": false\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/api/v1/register/",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"register",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 19 May 2022 03:51:58 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.7"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "178"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 19,\n    \"created_at\": \"05/19/2022 09:36:58\",\n    \"email\": \"super@g.com\",\n    \"last_name\": \"user1\",\n    \"first_name\": \"user1\",\n    \"is_active\": true,\n    \"is_staff\": true,\n    \"is_superuser\": false,\n    \"is_admin\": false\n}"
+						}
+					]
+				},
+				{
+					"name": "create intern user by admin/superadmin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"intern1@g.com\",\n    \"last_name\": \"intern1\",\n    \"first_name\": \"intern1\",\n    \"password\": \"op09op09\",\n    \"password2\": \"op09op09\",\n    \"is_staff\": false,\n    \"is_superuser\": false,\n    \"is_admin\": false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/register/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"register",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create intern user by admin/superadmin",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"intern1@g.com\",\n    \"last_name\": \"intern1\",\n    \"first_name\": \"intern1\",\n    \"password\": \"op09op09\",\n    \"password2\": \"op09op09\",\n    \"is_staff\": false,\n    \"is_superuser\": false,\n    \"is_admin\": false\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/api/v1/register/",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"register",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 19 May 2022 03:53:42 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.7"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "185"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 20,\n    \"created_at\": \"05/19/2022 09:38:42\",\n    \"email\": \"intern1@g.com\",\n    \"last_name\": \"intern1\",\n    \"first_name\": \"intern1\",\n    \"is_active\": true,\n    \"is_staff\": false,\n    \"is_superuser\": false,\n    \"is_admin\": false\n}"
+						}
+					]
+				},
+				{
+					"name": "create intern user by admin/superadmin Copy",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"email\": \"intern2@g.com\",\n    \"last_name\": \"intern2\",\n    \"first_name\": \"intern2\",\n    \"password\": \"op09op09\",\n    \"password2\": \"op09op09\",\n    \"is_staff\": false,\n    \"is_superuser\": false,\n    \"is_admin\": false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/register/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"register",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create intern user by admin/superadmin",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"email\": \"intern1@g.com\",\n    \"last_name\": \"intern1\",\n    \"first_name\": \"intern1\",\n    \"password\": \"op09op09\",\n    \"password2\": \"op09op09\",\n    \"is_staff\": false,\n    \"is_superuser\": false,\n    \"is_admin\": false\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/api/v1/register/",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"register",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 19 May 2022 03:53:42 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.7"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "185"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 20,\n    \"created_at\": \"05/19/2022 09:38:42\",\n    \"email\": \"intern1@g.com\",\n    \"last_name\": \"intern1\",\n    \"first_name\": \"intern1\",\n    \"is_active\": true,\n    \"is_staff\": false,\n    \"is_superuser\": false,\n    \"is_admin\": false\n}"
+						}
+					]
+				},
+				{
+					"name": "get list of user by admin/superadmin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/v1/user/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"user",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get list of user by admin/superadmin",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/v1/user/",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 19 May 2022 03:51:22 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.7"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1128"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"count\": 7,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 1,\n            \"created_at\": \"05/18/2022 07:33:59\",\n            \"email\": \"1@g.com\",\n            \"last_name\": \"p\",\n            \"first_name\": \"r\",\n            \"is_active\": true,\n            \"is_staff\": true,\n            \"is_superuser\": true\n        },\n        {\n            \"id\": 13,\n            \"created_at\": \"05/19/2022 07:42:06\",\n            \"email\": \"1w@g.com\",\n            \"last_name\": \"l\",\n            \"first_name\": \"f\",\n            \"is_active\": true,\n            \"is_staff\": false,\n            \"is_superuser\": false\n        },\n        {\n            \"id\": 14,\n            \"created_at\": \"05/19/2022 08:21:04\",\n            \"email\": \"s@g.com\",\n            \"last_name\": \"super\",\n            \"first_name\": \"visior\",\n            \"is_active\": true,\n            \"is_staff\": true,\n            \"is_superuser\": false\n        },\n        {\n            \"id\": 15,\n            \"created_at\": \"05/19/2022 08:29:38\",\n            \"email\": \"i1@g.com\",\n            \"last_name\": \"1\",\n            \"first_name\": \"1\",\n            \"is_active\": true,\n            \"is_staff\": false,\n            \"is_superuser\": false\n        },\n        {\n            \"id\": 16,\n            \"created_at\": \"05/19/2022 08:29:53\",\n            \"email\": \"i2@g.com\",\n            \"last_name\": \"2\",\n            \"first_name\": \"2\",\n            \"is_active\": true,\n            \"is_staff\": false,\n            \"is_superuser\": false\n        },\n        {\n            \"id\": 17,\n            \"created_at\": \"05/19/2022 08:30:08\",\n            \"email\": \"i3@g.com\",\n            \"last_name\": \"3\",\n            \"first_name\": \"3\",\n            \"is_active\": true,\n            \"is_staff\": false,\n            \"is_superuser\": false\n        },\n        {\n            \"id\": 18,\n            \"created_at\": \"05/19/2022 09:35:47\",\n            \"email\": \"user1@g.com\",\n            \"last_name\": \"user1\",\n            \"first_name\": \"user1\",\n            \"is_active\": true,\n            \"is_staff\": true,\n            \"is_superuser\": false\n        }\n    ]\n}"
+						},
+						{
+							"name": "get list of user by admin/superadmin",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/v1/user/",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"user",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 19 May 2022 03:54:45 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.7"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1629"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"count\": 10,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 1,\n            \"created_at\": \"05/18/2022 07:33:59\",\n            \"email\": \"1@g.com\",\n            \"last_name\": \"p\",\n            \"first_name\": \"r\",\n            \"is_active\": true,\n            \"is_staff\": true,\n            \"is_superuser\": true\n        },\n        {\n            \"id\": 13,\n            \"created_at\": \"05/19/2022 07:42:06\",\n            \"email\": \"1w@g.com\",\n            \"last_name\": \"l\",\n            \"first_name\": \"f\",\n            \"is_active\": true,\n            \"is_staff\": false,\n            \"is_superuser\": false\n        },\n        {\n            \"id\": 14,\n            \"created_at\": \"05/19/2022 08:21:04\",\n            \"email\": \"s@g.com\",\n            \"last_name\": \"super\",\n            \"first_name\": \"visior\",\n            \"is_active\": true,\n            \"is_staff\": true,\n            \"is_superuser\": false\n        },\n        {\n            \"id\": 15,\n            \"created_at\": \"05/19/2022 08:29:38\",\n            \"email\": \"i1@g.com\",\n            \"last_name\": \"1\",\n            \"first_name\": \"1\",\n            \"is_active\": true,\n            \"is_staff\": false,\n            \"is_superuser\": false\n        },\n        {\n            \"id\": 16,\n            \"created_at\": \"05/19/2022 08:29:53\",\n            \"email\": \"i2@g.com\",\n            \"last_name\": \"2\",\n            \"first_name\": \"2\",\n            \"is_active\": true,\n            \"is_staff\": false,\n            \"is_superuser\": false\n        },\n        {\n            \"id\": 17,\n            \"created_at\": \"05/19/2022 08:30:08\",\n            \"email\": \"i3@g.com\",\n            \"last_name\": \"3\",\n            \"first_name\": \"3\",\n            \"is_active\": true,\n            \"is_staff\": false,\n            \"is_superuser\": false\n        },\n        {\n            \"id\": 18,\n            \"created_at\": \"05/19/2022 09:35:47\",\n            \"email\": \"user1@g.com\",\n            \"last_name\": \"user1\",\n            \"first_name\": \"user1\",\n            \"is_active\": true,\n            \"is_staff\": true,\n            \"is_superuser\": false\n        },\n        {\n            \"id\": 19,\n            \"created_at\": \"05/19/2022 09:36:58\",\n            \"email\": \"super@g.com\",\n            \"last_name\": \"user1\",\n            \"first_name\": \"user1\",\n            \"is_active\": true,\n            \"is_staff\": true,\n            \"is_superuser\": false\n        },\n        {\n            \"id\": 20,\n            \"created_at\": \"05/19/2022 09:38:42\",\n            \"email\": \"intern1@g.com\",\n            \"last_name\": \"intern1\",\n            \"first_name\": \"intern1\",\n            \"is_active\": true,\n            \"is_staff\": false,\n            \"is_superuser\": false\n        },\n        {\n            \"id\": 21,\n            \"created_at\": \"05/19/2022 09:39:33\",\n            \"email\": \"intern2@g.com\",\n            \"last_name\": \"intern2\",\n            \"first_name\": \"intern2\",\n            \"is_active\": true,\n            \"is_staff\": false,\n            \"is_superuser\": false\n        }\n    ]\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "profile",
+			"item": [
+				{
+					"name": "get list of profile by admin/superadmin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/v1/profile/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"profile",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get list of profile by admin/superadmin",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/v1/profile/",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"profile",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 19 May 2022 03:56:26 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.7"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "2074"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"count\": 10,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 19,\n            \"location\": null,\n            \"birthdate\": null,\n            \"position\": null,\n            \"descriptions\": \"\",\n            \"phonenumbers\": null,\n            \"role\": 1,\n            \"join_date\": \"2022-05-19\",\n            \"created_at\": \"2022-05-19\",\n            \"updated_at\": \"05/19/2022 09:39:33\",\n            \"user\": 21\n        },\n        {\n            \"id\": 18,\n            \"location\": null,\n            \"birthdate\": null,\n            \"position\": null,\n            \"descriptions\": \"\",\n            \"phonenumbers\": null,\n            \"role\": 1,\n            \"join_date\": \"2022-05-19\",\n            \"created_at\": \"2022-05-19\",\n            \"updated_at\": \"05/19/2022 09:38:42\",\n            \"user\": 20\n        },\n        {\n            \"id\": 17,\n            \"location\": null,\n            \"birthdate\": null,\n            \"position\": null,\n            \"descriptions\": \"\",\n            \"phonenumbers\": null,\n            \"role\": 2,\n            \"join_date\": null,\n            \"created_at\": \"2022-05-19\",\n            \"updated_at\": \"05/19/2022 09:36:58\",\n            \"user\": 19\n        },\n        {\n            \"id\": 16,\n            \"location\": null,\n            \"birthdate\": null,\n            \"position\": null,\n            \"descriptions\": \"\",\n            \"phonenumbers\": null,\n            \"role\": 2,\n            \"join_date\": null,\n            \"created_at\": \"2022-05-19\",\n            \"updated_at\": \"05/19/2022 09:35:47\",\n            \"user\": 18\n        },\n        {\n            \"id\": 15,\n            \"location\": null,\n            \"birthdate\": null,\n            \"position\": null,\n            \"descriptions\": \"\",\n            \"phonenumbers\": null,\n            \"role\": 1,\n            \"join_date\": \"2022-05-19\",\n            \"created_at\": \"2022-05-19\",\n            \"updated_at\": \"05/19/2022 08:30:08\",\n            \"user\": 17\n        },\n        {\n            \"id\": 14,\n            \"location\": null,\n            \"birthdate\": null,\n            \"position\": null,\n            \"descriptions\": \"\",\n            \"phonenumbers\": null,\n            \"role\": 1,\n            \"join_date\": \"2022-05-19\",\n            \"created_at\": \"2022-05-19\",\n            \"updated_at\": \"05/19/2022 08:29:53\",\n            \"user\": 16\n        },\n        {\n            \"id\": 13,\n            \"location\": null,\n            \"birthdate\": null,\n            \"position\": null,\n            \"descriptions\": \"\",\n            \"phonenumbers\": null,\n            \"role\": 1,\n            \"join_date\": \"2022-05-19\",\n            \"created_at\": \"2022-05-19\",\n            \"updated_at\": \"05/19/2022 08:29:38\",\n            \"user\": 15\n        },\n        {\n            \"id\": 12,\n            \"location\": null,\n            \"birthdate\": null,\n            \"position\": null,\n            \"descriptions\": \"\",\n            \"phonenumbers\": null,\n            \"role\": 2,\n            \"join_date\": null,\n            \"created_at\": \"2022-05-19\",\n            \"updated_at\": \"05/19/2022 08:22:40\",\n            \"user\": 14\n        },\n        {\n            \"id\": 11,\n            \"location\": \"nepal\",\n            \"birthdate\": \"2022-05-19\",\n            \"position\": \"backend\",\n            \"descriptions\": \"ddd\",\n            \"phonenumbers\": \"1111\",\n            \"role\": 1,\n            \"join_date\": \"2022-05-19\",\n            \"created_at\": \"2022-05-19\",\n            \"updated_at\": \"05/19/2022 08:00:33\",\n            \"user\": 13\n        },\n        {\n            \"id\": 1,\n            \"location\": \"ss\",\n            \"birthdate\": \"2022-05-18\",\n            \"position\": \"backend\",\n            \"descriptions\": \"\",\n            \"phonenumbers\": \"1234\",\n            \"role\": 2,\n            \"join_date\": null,\n            \"created_at\": \"2022-05-18\",\n            \"updated_at\": \"05/19/2022 07:55:35\",\n            \"user\": 1\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "get own profile by non-admin/superadmin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/v1/profile/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"profile",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get own profile by non-admin/superadmin",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/v1/profile/",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"profile",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 19 May 2022 04:03:16 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.7"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "193"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 17,\n    \"location\": null,\n    \"birthdate\": null,\n    \"position\": null,\n    \"descriptions\": \"\",\n    \"phonenumbers\": null,\n    \"role\": 2,\n    \"join_date\": null,\n    \"created_at\": \"2022-05-19\",\n    \"updated_at\": \"05/19/2022 09:36:58\",\n    \"user\": 19\n}"
+						}
+					]
+				},
+				{
+					"name": "edit own profile by non-admin/superadmin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"location\": \"ktm\",\n    \"birthdate\": \"2002-04-5\",\n    \"position\": \"backend\",\n    \"descriptions\": \"\",\n    \"phonenumbers\": \"12334567890\",\n    \"join_date\": \"2022-04-05\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/profile/17/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"profile",
+								"17",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "edit own profile by non-admin/superadmin",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"location\": \"ktm\",\n    \"birthdate\": \"2002-04-5\",\n    \"position\": \"backend\",\n    \"descriptions\": \"\",\n    \"phonenumbers\": \"12334567890\",\n    \"join_date\": \"2022-04-05\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/api/v1/profile/17/",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"profile",
+										"17",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 19 May 2022 04:05:07 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.7"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "224"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 17,\n    \"location\": \"ktm\",\n    \"birthdate\": \"2002-04-05\",\n    \"position\": \"backend\",\n    \"descriptions\": \"\",\n    \"phonenumbers\": \"12334567890\",\n    \"role\": 2,\n    \"join_date\": \"2022-04-05\",\n    \"created_at\": \"2022-05-19\",\n    \"updated_at\": \"05/19/2022 09:50:07\",\n    \"user\": 19\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "login/logout",
+			"item": [
+				{
+					"name": "login with superadmin/admin",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"token\", pm.response.json().jwt_token.access);",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "1@g.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "op09",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/login/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"login",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "login with superadmin/admin",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "1@g.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "op09",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/v1/login/",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"login",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 19 May 2022 03:59:13 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.7"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "1864"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjUyOTUwNzUzLCJqdGkiOiJkODRhZjdlNzFmZDc0NWU2YjFlZWViM2M2MjQ2NDFkYiIsInVzZXJfaWQiOjF9.9NHStK2247Ld5Xla0YKxt4B5qO6BnPUnS-1EF84IZ00; Path=/"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"jwt_token\": {\n        \"refresh\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1MzUzNzU1MywianRpIjoiZjZmYjhiYzI4NTA3NGJjYWEyNzFkYmE1ZDdiNGNkMmMiLCJ1c2VyX2lkIjoxfQ.9FvBy5V9g3XjTNiDAJyJXxtvpCrQ6RR79GMI4pIBrX8\",\n        \"access\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjUyOTUwNzUzLCJqdGkiOiJkODRhZjdlNzFmZDc0NWU2YjFlZWViM2M2MjQ2NDFkYiIsInVzZXJfaWQiOjF9.9NHStK2247Ld5Xla0YKxt4B5qO6BnPUnS-1EF84IZ00\"\n    },\n    \"permissions\": [\n        \"authentication.change_user\",\n        \"authentication.add_profile\",\n        \"token_blacklist.delete_blacklistedtoken\",\n        \"admin.delete_logentry\",\n        \"auth.add_group\",\n        \"token_blacklist.delete_outstandingtoken\",\n        \"attendance.view_attendance\",\n        \"auth.change_group\",\n        \"sessions.add_session\",\n        \"authentication.view_user\",\n        \"sessions.delete_session\",\n        \"auth.add_permission\",\n        \"attendance.change_attendance\",\n        \"admin.view_logentry\",\n        \"contenttypes.add_contenttype\",\n        \"auth.delete_group\",\n        \"contenttypes.view_contenttype\",\n        \"authentication.delete_profile\",\n        \"contenttypes.delete_contenttype\",\n        \"token_blacklist.change_outstandingtoken\",\n        \"auth.view_group\",\n        \"authentication.change_profile\",\n        \"authentication.delete_user\",\n        \"sessions.view_session\",\n        \"token_blacklist.view_blacklistedtoken\",\n        \"token_blacklist.view_outstandingtoken\",\n        \"attendance.delete_attendance\",\n        \"task.change_task\",\n        \"admin.change_logentry\",\n        \"authentication.view_profile\",\n        \"admin.add_logentry\",\n        \"contenttypes.change_contenttype\",\n        \"attendance.add_attendance\",\n        \"auth.change_permission\",\n        \"task.delete_task\",\n        \"task.add_task\",\n        \"auth.delete_permission\",\n        \"token_blacklist.change_blacklistedtoken\",\n        \"sessions.change_session\",\n        \"authentication.add_user\",\n        \"task.view_task\",\n        \"auth.view_permission\",\n        \"token_blacklist.add_outstandingtoken\",\n        \"token_blacklist.add_blacklistedtoken\"\n    ],\n    \"user\": {\n        \"id\": 1,\n        \"created_at\": \"05/18/2022 07:33:59\",\n        \"email\": \"1@g.com\",\n        \"last_name\": \"p\",\n        \"first_name\": \"r\",\n        \"is_active\": true,\n        \"is_staff\": true,\n        \"is_superuser\": true\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "login with supervisior",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"token\", pm.response.json().jwt_token.access);",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "super@g.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "op09op09",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/login/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"login",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "login with supervisior",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "super@g.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "op09op09",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/v1/login/",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"login",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 19 May 2022 04:00:18 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.7"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "641"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjUyOTUwODE4LCJqdGkiOiIxOTBkMzE1ZjMwOWI0MzYzYjg3NjNmYzhhMzE5MTcwNCIsInVzZXJfaWQiOjE5fQ.aK8azVs_EzvwaFwtgF5Rm5TDtE0pO3EPe3U5qW6fff4; Path=/"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"jwt_token\": {\n        \"refresh\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1MzUzNzYxOCwianRpIjoiNmU0ZmJmZjI0MmM1NDg2Mzk3ZjkwMzBiMTBmOWU4YWIiLCJ1c2VyX2lkIjoxOX0.Ihvx4wpyELgAi3ypPQcyPnr4q_J5Pz2NjKI0xJILNFU\",\n        \"access\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjUyOTUwODE4LCJqdGkiOiIxOTBkMzE1ZjMwOWI0MzYzYjg3NjNmYzhhMzE5MTcwNCIsInVzZXJfaWQiOjE5fQ.aK8azVs_EzvwaFwtgF5Rm5TDtE0pO3EPe3U5qW6fff4\"\n    },\n    \"permissions\": [],\n    \"user\": {\n        \"id\": 19,\n        \"created_at\": \"05/19/2022 09:36:58\",\n        \"email\": \"super@g.com\",\n        \"last_name\": \"user1\",\n        \"first_name\": \"user1\",\n        \"is_active\": true,\n        \"is_staff\": true,\n        \"is_superuser\": false\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "login with intern",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"token\", pm.response.json().jwt_token.access);",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "intern2@g.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "op09op09",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/login/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"login",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "login with intern",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "email",
+											"value": "intern1@g.com",
+											"type": "text"
+										},
+										{
+											"key": "password",
+											"value": "op09op09",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/v1/login/",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"login",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 19 May 2022 04:01:19 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.7"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "648"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Set-Cookie",
+									"value": "token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjUyOTUwODc5LCJqdGkiOiI4NmRmNzliZjZhNmU0ZjkxOTE4NzBkYTNmZTZkNTcyNSIsInVzZXJfaWQiOjIwfQ.8J-_Mn98ZycSgs_WTKCpz00CU3wypkFvX3TldIyAO1o; Path=/"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"jwt_token\": {\n        \"refresh\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1MzUzNzY3OSwianRpIjoiZjg2ZTQyY2I1ZTZjNGUyYWE5Zjc2ZDBkZWMxYzkxNzkiLCJ1c2VyX2lkIjoyMH0.CkVHLFNKHaEkGESY0Iud-97QbZOYa5-R6k9HRFYqrAE\",\n        \"access\": \"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNjUyOTUwODc5LCJqdGkiOiI4NmRmNzliZjZhNmU0ZjkxOTE4NzBkYTNmZTZkNTcyNSIsInVzZXJfaWQiOjIwfQ.8J-_Mn98ZycSgs_WTKCpz00CU3wypkFvX3TldIyAO1o\"\n    },\n    \"permissions\": [],\n    \"user\": {\n        \"id\": 20,\n        \"created_at\": \"05/19/2022 09:38:42\",\n        \"email\": \"intern1@g.com\",\n        \"last_name\": \"intern1\",\n        \"first_name\": \"intern1\",\n        \"is_active\": true,\n        \"is_staff\": false,\n        \"is_superuser\": false\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "logout",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.environment.set(\"token\", pm.response.json().jwt_token.access);",
+									""
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "refresh_token",
+									"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1MzUzNzY3OSwianRpIjoiZjg2ZTQyY2I1ZTZjNGUyYWE5Zjc2ZDBkZWMxYzkxNzkiLCJ1c2VyX2lkIjoyMH0.CkVHLFNKHaEkGESY0Iud-97QbZOYa5-R6k9HRFYqrAE",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/logout/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"logout",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "logout",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "refresh_token",
+											"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTY1MzUzNzY3OSwianRpIjoiZjg2ZTQyY2I1ZTZjNGUyYWE5Zjc2ZDBkZWMxYzkxNzkiLCJ1c2VyX2lkIjoyMH0.CkVHLFNKHaEkGESY0Iud-97QbZOYa5-R6k9HRFYqrAE",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "localhost:8000/api/v1/logout/",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"logout",
+										""
+									]
+								}
+							},
+							"status": "Reset Content",
+							"code": 205,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 19 May 2022 04:02:31 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.7"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "32"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"sucessfully logout\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "attendance",
+			"item": [
+				{
+					"name": "get today attendance of all by admin/superadmin",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/attendance/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"attendance",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get today attendance of all by admin/superadmin",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "localhost:8000/api/v1/attendance/",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"attendance",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 19 May 2022 04:07:39 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.7"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "156"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"id\": 13,\n        \"user\": \"f l\",\n        \"date_time\": \"2022-05-19\",\n        \"status\": \"present\",\n        \"leave_reason\": \"\",\n        \"entry_time\": \"05/19/2022 08:04:48\",\n        \"leave_time\": \"05/19/2022 08:18:31\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "get histroy attendance of all by admin/superadmin",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/v1/attendance/?histroy=true",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"attendance",
+								""
+							],
+							"query": [
+								{
+									"key": "histroy",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get histroy attendance of all by admin/superadmin",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/api/v1/attendance/?histroy=true",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"attendance",
+										""
+									],
+									"query": [
+										{
+											"key": "histroy",
+											"value": "true"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 19 May 2022 04:10:11 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.7"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "206"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"count\": 1,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 13,\n            \"user\": \"f l\",\n            \"date_time\": \"2022-05-19\",\n            \"status\": \"present\",\n            \"leave_reason\": \"\",\n            \"entry_time\": \"05/19/2022 08:04:48\",\n            \"leave_time\": \"05/19/2022 08:18:31\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "get histroy attendance of own by interns",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"action\": \"leave\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/attendance/?histroy=true",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"attendance",
+								""
+							],
+							"query": [
+								{
+									"key": "histroy",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get histroy attendance of all by admin/superadmin",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"action\": \"leave\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/api/v1/attendance/?histroy=true",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"attendance",
+										""
+									],
+									"query": [
+										{
+											"key": "histroy",
+											"value": "true"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 19 May 2022 04:10:11 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.7"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "206"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"count\": 1,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 13,\n            \"user\": \"f l\",\n            \"date_time\": \"2022-05-19\",\n            \"status\": \"present\",\n            \"leave_reason\": \"\",\n            \"entry_time\": \"05/19/2022 08:04:48\",\n            \"leave_time\": \"05/19/2022 08:18:31\"\n        }\n    ]\n}"
+						},
+						{
+							"name": "get histroy attendance of own by interns",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"action\": \"leave\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/api/v1/attendance/?histroy=true",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"attendance",
+										""
+									],
+									"query": [
+										{
+											"key": "histroy",
+											"value": "true"
+										}
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 19 May 2022 04:11:45 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.7"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "48"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"can't find your Attendance profile\"\n}"
+						}
+					]
+				},
+				{
+					"name": "get histroy attendance of own by interns Copy",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/attendance/?histroy=true",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"attendance",
+								""
+							],
+							"query": [
+								{
+									"key": "histroy",
+									"value": "true"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get histroy attendance of all by admin/superadmin",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/api/v1/attendance/?histroy=true",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"attendance",
+										""
+									],
+									"query": [
+										{
+											"key": "histroy",
+											"value": "true"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 19 May 2022 04:10:11 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.7"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "206"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"count\": 1,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 13,\n            \"user\": \"f l\",\n            \"date_time\": \"2022-05-19\",\n            \"status\": \"present\",\n            \"leave_reason\": \"\",\n            \"entry_time\": \"05/19/2022 08:04:48\",\n            \"leave_time\": \"05/19/2022 08:18:31\"\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "create attendance by only interns",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\": \"present\",\n    \"leave_reason\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/attendance/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"attendance",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create attendance by only interns",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"status\": \"present\",\n    \"leave_reason\": \"\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/api/v1/attendance/",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"attendance",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 19 May 2022 04:13:55 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.7"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "134"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 15,\n    \"date_time\": \"2022-05-19\",\n    \"status\": \"present\",\n    \"leave_reason\": \"\",\n    \"entry_time\": \"05/19/2022 09:58:55\",\n    \"leave_time\": null,\n    \"user\": 20\n}"
+						},
+						{
+							"name": "create once attendance by only interns",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"status\": \"present\",\n    \"leave_reason\": \"\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/api/v1/attendance/",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"attendance",
+										""
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 19 May 2022 04:15:27 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.7"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "75"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"non_field_errors\": [\n        \"The fields user, date_time must make a unique set.\"\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "update own attendance when leaving",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"action\": \"leave\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/attendance/15/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"attendance",
+								"15",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update own attendance when leaving",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"status\": \"present\",\n    \"leave_reason\": \"\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/api/v1/attendance/",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"attendance",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 19 May 2022 04:13:55 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.7"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "134"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 15,\n    \"date_time\": \"2022-05-19\",\n    \"status\": \"present\",\n    \"leave_reason\": \"\",\n    \"entry_time\": \"05/19/2022 09:58:55\",\n    \"leave_time\": \"05/19/2022 09:59:55\",\n    \"user\": 20\n}"
+						},
+						{
+							"name": "update once own attendance when leaving",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"action\": \"leave\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/api/v1/attendance/15/",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"attendance",
+										"15",
+										""
+									]
+								}
+							},
+							"status": "Forbidden",
+							"code": 403,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 19 May 2022 04:16:05 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.7"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, PUT, PATCH, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "45"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"You have already set leave time\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "task",
+			"item": [
+				{
+					"name": "create task by only supervisior",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"print hello word\",\n    \"description\": \"write in python\",\n    \"dead_line\": \"2022-02-04\",\n    \"assign_to\": []\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/task/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"task",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "create task by only supervisior",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"title\": \"print hello word\",\n    \"description\": \"write in python\",\n    \"dead_line\": \"2022-02-04\",\n    \"assign_to\": []\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/api/v1/task/",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"task",
+										""
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 19 May 2022 05:36:25 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.7"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "205"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 7,\n    \"title\": \"print hello word\",\n    \"description\": \"write in python\",\n    \"dead_line\": \"2022-02-04\",\n    \"created_at\": \"05/19/2022 11:21:25\",\n    \"updated_at\": \"05/19/2022 11:21:25\",\n    \"status\": [],\n    \"created_by\": 17,\n    \"assign_to\": []\n}"
+						}
+					]
+				},
+				{
+					"name": "get task by interns if intern is assign_to only",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/v1/task/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"task",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get task by interns if intern is assign_to only",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/api/v1/task/",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"task",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 19 May 2022 05:39:26 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.7"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "268"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"count\": 1,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 7,\n            \"created_by\": \"user1 user1\",\n            \"assign_to\": [],\n            \"title\": \"print hello word\",\n            \"description\": \"write in python\",\n            \"dead_line\": \"2022-02-04\",\n            \"created_at\": \"05/19/2022 11:21:25\",\n            \"updated_at\": \"05/19/2022 11:21:25\",\n            \"status\": []\n        }\n    ]\n}"
+						},
+						{
+							"name": "get task by interns if intern is assign_to only",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/api/v1/task/",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"task",
+										""
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 19 May 2022 05:41:36 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.7"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "34"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"can't find your task\"\n}"
+						}
+					]
+				},
+				{
+					"name": "get list of task by supervisior",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/task/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"task",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get list of task by supervisior",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/api/v1/task/",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"task",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 19 May 2022 05:38:49 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.7"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, POST, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "268"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"count\": 1,\n    \"next\": null,\n    \"previous\": null,\n    \"results\": [\n        {\n            \"id\": 7,\n            \"created_by\": \"user1 user1\",\n            \"assign_to\": [],\n            \"title\": \"print hello word\",\n            \"description\": \"write in python\",\n            \"dead_line\": \"2022-02-04\",\n            \"created_at\": \"05/19/2022 11:21:25\",\n            \"updated_at\": \"05/19/2022 11:21:25\",\n            \"status\": []\n        }\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "update/add intern by supervisior",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"action\": \"add\",\n    \"intern_list\":\"13,14,19\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/task/7/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"task",
+								"7",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update/add intern by supervisior",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"action\": \"add\",\n    \"intern_list\":\"13,14\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/api/v1/task/7/",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"task",
+										"7",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 19 May 2022 05:40:48 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.7"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "210"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 7,\n    \"title\": \"print hello word\",\n    \"description\": \"write in python\",\n    \"dead_line\": \"2022-02-04\",\n    \"created_at\": \"05/19/2022 11:21:25\",\n    \"updated_at\": \"05/19/2022 11:25:48\",\n    \"status\": [],\n    \"created_by\": 17,\n    \"assign_to\": [\n        14,\n        13\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "update/add by intern after completed",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"action\": \"submit\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/v1/task/7/",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"task",
+								"7",
+								""
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update/add by intern after completed",
+							"originalRequest": {
+								"method": "PATCH",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"action\": \"submit\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "localhost:8000/api/v1/task/7/",
+									"host": [
+										"localhost"
+									],
+									"port": "8000",
+									"path": [
+										"api",
+										"v1",
+										"task",
+										"7",
+										""
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Date",
+									"value": "Thu, 19 May 2022 05:45:17 GMT"
+								},
+								{
+									"key": "Server",
+									"value": "WSGIServer/0.2 CPython/3.9.7"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json"
+								},
+								{
+									"key": "Vary",
+									"value": "Accept, Origin"
+								},
+								{
+									"key": "Allow",
+									"value": "GET, PUT, PATCH, DELETE, HEAD, OPTIONS"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "DENY"
+								},
+								{
+									"key": "Content-Length",
+									"value": "342"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "same-origin"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"id\": 7,\n    \"created_by\": \"user1 user1\",\n    \"assign_to\": [\n        \"intern2 intern2\",\n        \"2 2\",\n        \"1 1\"\n    ],\n    \"title\": \"print hello word\",\n    \"description\": \"write in python\",\n    \"dead_line\": \"2022-02-04\",\n    \"created_at\": \"05/19/2022 11:21:25\",\n    \"updated_at\": \"05/19/2022 11:30:17\",\n    \"status\": [\n        [\n            \"intern2 intern2\",\n            \"2022-05-19 11:30:07.196616\"\n        ],\n        [\n            \"intern2 intern2\",\n            \"2022-05-19 11:30:17.018675\"\n        ]\n    ]\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}
