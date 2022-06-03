@@ -1,4 +1,5 @@
 from email.policy import default
+import profile
 from django.db import models
 from django.utils.translation import ugettext_lazy as _
 from django.contrib.auth import get_user_model
@@ -18,7 +19,7 @@ class Task(models.Model):
     description = models.TextField(_('Description'))
     dead_line = models.DateField()
 
-    assign_to = models.ManyToManyField(Profile,blank=True)
+    assign_to = models.ManyToManyField(Profile,blank=True,through='task_assign')
 
     created_at = models.DateTimeField(_("Created at"), auto_now_add=True)
     updated_at = models.DateTimeField(_("Updated at"), auto_now=True)
@@ -33,4 +34,8 @@ class Task(models.Model):
     def __str__(self):
         return str(self.title)
     
-    
+
+class task_assign(models.Model):
+    task = models.ForeignKey(Task, on_delete=models.CASCADE)
+    profile = models.ForeignKey(Profile, on_delete=models.CASCADE )
+    rank = models.PositiveIntegerField(blank=True, null=True)
